@@ -1,0 +1,17 @@
+[project]
+name = "quoka-agent"
+version = "0.1.0"
+description = "A minimal CLI coding agent powered by Claude"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=0.39.0",
+    "rich>=13.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+quoka = "src.cli:main"
